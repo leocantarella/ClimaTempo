@@ -1,0 +1,10 @@
+target/
+*.iml
+*.class
+*.jar
+*.war
+*.log
+.idea/
+.vscode/
+application.properties
+application.yml
