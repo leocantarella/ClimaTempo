@@ -1,9 +1,8 @@
-package com.climatempo.ClimaTempo.controller;
+package com.climatempo.controller;
 
 
-import com.climatempo.ClimaTempo.dto.WeatherResponse;
-import com.climatempo.ClimaTempo.service.WeatherService;
-import lombok.RequiredArgsConstructor;
+import com.climatempo.dto.WeatherResponse;
+import com.climatempo.service.WeatherService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

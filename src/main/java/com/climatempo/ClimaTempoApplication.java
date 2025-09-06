@@ -1,4 +1,4 @@
-package com.climatempo.ClimaTempo;
+package com.climatempo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

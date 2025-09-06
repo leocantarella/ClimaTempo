@@ -1,9 +1,7 @@
-package com.climatempo.ClimaTempo.service;
+package com.climatempo.service;
 
-import com.climatempo.ClimaTempo.client.WeatherClient;
-import com.climatempo.ClimaTempo.dto.WeatherResponse;
-import lombok.AllArgsConstructor;
-import lombok.RequiredArgsConstructor;
+import com.climatempo.client.WeatherClient;
+import com.climatempo.dto.WeatherResponse;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +18,7 @@ public class WeatherService {
     private String apiKey;
 
     public WeatherResponse climaPorCidade(String cidade){
-        return weatherClient.getWeather(cidade, apiKey, "metric");
+        return weatherClient.climaPorCidade(cidade, apiKey, "metric");
     }
 
 

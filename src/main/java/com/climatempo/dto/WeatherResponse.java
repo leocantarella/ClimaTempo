@@ -1,4 +1,4 @@
-package com.climatempo.ClimaTempo.dto;
+package com.climatempo.dto;
 
 public record WeatherResponse(
         Main main,

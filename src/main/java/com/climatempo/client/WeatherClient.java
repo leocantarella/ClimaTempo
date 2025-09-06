@@ -1,6 +1,6 @@
-package com.climatempo.ClimaTempo.client;
+package com.climatempo.client;
 
-import com.climatempo.ClimaTempo.dto.WeatherResponse;
+import com.climatempo.dto.WeatherResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface WeatherClient {
 
     @GetMapping("/weather")
-    WeatherResponse getWeather(@RequestParam("q") String city,
+    WeatherResponse climaPorCidade(@RequestParam("q") String city,
                                @RequestParam("appid") String apiKey,
                                @RequestParam("units") String units);
 }
