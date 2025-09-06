@@ -1,6 +1,5 @@
 package com.climatempo.controller; // <= AJUSTE para o seu pacote real
 
-import com.climatempo.controller.WeatherController;
 import com.climatempo.dto.WeatherResponse;
 import com.climatempo.service.WeatherService;
 
@@ -25,6 +24,8 @@ class WeatherControllerTest {
     WeatherService service;
 
     @Test
+
+    //Esse método deve retornar um Json básico com as informações que foram configuradas no mock
     void deveRetornarJsonBasico() throws Exception {
         var main = new WeatherResponse.Main(17.45, 17.29, 78);
         var resp = new WeatherResponse(main, "São Paulo");
