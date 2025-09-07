@@ -11,8 +11,9 @@ public interface WeatherClient {
 
     @GetMapping("/data/2.5/weather")
     WeatherResponse climaPorCidade(@RequestParam("q") String city,
-                               @RequestParam("appid") String apiKey,
-                               @RequestParam("units") String units);
+                                   @RequestParam("appid") String apiKey,
+                                   @RequestParam("units") String units,
+                                   @RequestParam("lang") String lang);
 
 
     @GetMapping("/data/2.5/forecast")

@@ -8,7 +8,7 @@ import lombok.Setter;
 
 
 @Entity
-@Table(name = "cidade", uniqueConstraints = @UniqueConstraint(columnNames = {"name"}))
+@Table(name = "cidade", uniqueConstraints = @UniqueConstraint(columnNames = {"nome"}))
 public class Cidade {
 
     @Id
@@ -18,15 +18,10 @@ public class Cidade {
     @Column(nullable = false, unique = true)
     private String nome;
 
-    private Double lat;
-    private Double lon;
-
 
     public Cidade(Long id, String nome, Double lat, Double lon) {
         this.id = id;
         this.nome = nome;
-        this.lat = lat;
-        this.lon = lon;
     }
 
     public Cidade() {
@@ -42,22 +37,6 @@ public class Cidade {
 
     public String getNome() {
         return nome;
-    }
-
-    public Double getLat() {
-        return lat;
-    }
-
-    public void setLat(Double lat) {
-        this.lat = lat;
-    }
-
-    public Double getLon() {
-        return lon;
-    }
-
-    public void setLon(Double lon) {
-        this.lon = lon;
     }
 
     public void setNome(String nome) {

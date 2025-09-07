@@ -6,5 +6,3 @@ target/
 *.log
 .idea/
 .vscode/
-application.properties
-application.yml

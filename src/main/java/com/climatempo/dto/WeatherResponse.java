@@ -2,17 +2,14 @@ package com.climatempo.dto;
 
 public record WeatherResponse(
         Main main,
-        String name,
-        Coord coord
+        Wind wind,
+        Sys sys,
+        Integer timezone,
+        String name
 ) {
-    public record Main(
-            double temp,
-            double feels_like,
-            int humidity
-    ) {}
+    public record Main(double temp, double feels_like, int humidity) {}
 
-    public record Coord(
-            double lon,
-            double lat
-    ){}
+    public record Wind(double speed, int deg) {}
+
+    public record Sys(long sunrise, long sunset) {}
 }

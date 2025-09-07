@@ -13,7 +13,7 @@ public record InsightObraDiaResponse(
             double tempDia,
             int umidade,
             double ventoMaxKmH,
-            double probChuva, // 0..1
+            double probChuva,
             double chuvaMm
     ) {}
 }
