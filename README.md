@@ -23,7 +23,7 @@ O ClimaTempo transforma esses dados em **informações úteis e contextuais**:
 ## 🏗️ Arquitetura Escolhida e Justificativa
 A arquitetura segue o padrão **Layered Architecture (Arquitetura em Camadas)**:
 
-- **Controller** → Endpoints REST (`/clima`, `/clima/historico`, `/clima/obra`).  
+- **Controller** → Endpoints REST (`/clima/{cidade}`, `/{cidadeId}/historico`, `/avaliarobra/{cidadeId}`).  
 - **Service** → Processamento de dados e geração de insights.  
 - **Repository** → Persistência (Spring Data JPA + H2/MySQL).  
 - **DTOs** → Transferência de dados entre camadas.  
