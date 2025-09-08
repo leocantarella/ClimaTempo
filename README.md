@@ -51,8 +51,6 @@ A arquitetura segue o padrão **Layered Architecture (Arquitetura em Camadas)**:
 ## ⚙️ Decisões Técnicas e Trade-offs
 - **Spring Boot** pela produtividade e ecossistema.  
 - **H2** para ambiente local e testes (trade-off: dados voláteis).  
-- **MySQL** como alternativa para produção (persistência real).  
-- **DTOs** para desacoplamento, mas aumentam verbosidade.  
 - **Integração com APIs externas** garante dados em tempo real, mas cria dependência de disponibilidade.  
 
 ---
@@ -124,7 +122,7 @@ GET http://localhost:8080/clima/historico/{cidadeID}
 
 ---
 
-### 🧱 Viabilidade da Obra (multi-dias)
+### 🧱 Viabilidade da Obra (5 dias)
 ```bash
 GET http://localhost:8080/api/clima/avaliarobra/{cidadeID}
 ```
