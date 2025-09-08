@@ -58,8 +58,7 @@ A arquitetura segue o padrão **Layered Architecture (Arquitetura em Camadas)**:
 ## 💻 Como Executar Localmente
 
 ### Pré-requisitos
-- Java 21+  
-- Maven 3.9+  
+- Java 17+  
 
 ### Configuração & Execução
 ```bash
