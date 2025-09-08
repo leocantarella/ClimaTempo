@@ -91,8 +91,8 @@ GET http://localhost:8080/api/clima/Palmas
 ```json
 {
   "cidade": "📍 Palmas",
-  "climaAtual": "🌡️ 25.0°C | 🤔 Sensação: 25.0°C | 💧 Umidade: 30%",
-  "insights": "😌 Conforto: Confortável | 🥤 Hidratação: Moderada | 🌬️ Vento: Normal | ⏰ Horários: 08:00–10:00"
+  "climaAtual": "🌡️ 33,9°C°C | 🤔 Sensação: 33,0°C | 💧 Umidade: 29%",
+  "insights": "😌 Conforto: Clima agradável. | 🥤 Hidratação: Recomenda-se beber pelo menos 3 litros de água hoje. | 🌬️ Vento: Vento leve — condições estáveis. | ⏰Horários: Prefira sair antes de 08:11 e após 16:10."
 }
 ```
 
