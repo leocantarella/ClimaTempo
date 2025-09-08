@@ -222,6 +222,3 @@ GET http://localhost:8080/api/clima/avaliarobra/{cidadeID}
 ```
 
 ---
-
-## 📜 Licença
-Este projeto está licenciado sob a [MIT License](LICENSE).
