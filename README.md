@@ -33,7 +33,6 @@ A arquitetura segue o padrão **Layered Architecture (Arquitetura em Camadas)**:
 - Separação de responsabilidades.  
 - Fácil integração futura com outras APIs ou bancos de dados.  
 - Flexível para evolução do negócio.  
-- Estrutura em camadas permite futura evolução para **arquitetura hexagonal**, isolando melhor o domínio de integrações externas.  
 
 ---
 
